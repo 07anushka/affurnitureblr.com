@@ -153,6 +153,17 @@ const Footer = () => {
             <b>↗</b>
           </a>
 
+
+          <a
+            href="https://www.instagram.com/a.f.furniture_?stkn=Y21jbnh6Zm0yNGQ0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="footer-social"
+          >
+            <span>INSTAGRAM</span>
+            <b>↗</b>
+          </a>
+
         </div>
 
       </div>
@@ -182,7 +193,7 @@ const Footer = () => {
           Curtain Automation
           <span>•</span>
           Blinds
-           <span>•</span>
+          <span>•</span>
           Wallpaper
         </p>
 

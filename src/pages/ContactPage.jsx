@@ -168,6 +168,26 @@ ${formData.message}
               <div className="contact-info-item">
 
                 <span className="contact-info-label">
+                  INSTAGRAM
+                </span>
+
+                <a
+                  href="https://www.instagram.com/a.f.furniture_?stkn=Y21jbnh6Zm0yNGQ0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit our Instagram
+                  <span className="contact-arrow">
+                    ↗
+                  </span>
+                </a>
+
+              </div>
+
+
+              <div className="contact-info-item">
+
+                <span className="contact-info-label">
                   EXPERIENCE
                 </span>
 
@@ -375,8 +395,6 @@ ${formData.message}
           </div>
 
         </section>
-
-
 
 
 

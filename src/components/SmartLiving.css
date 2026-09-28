@@ -1,0 +1,373 @@
+/* =========================================
+   SMART LIVING SECTION
+========================================= */
+
+.smart-living-section {
+  width: 100%;
+  min-height: 570px;
+
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+
+  background: #eee9e1;
+}
+
+
+/* =========================================
+   LEFT CONTENT
+========================================= */
+
+.smart-living-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 80px 6vw 80px 5vw;
+
+  box-sizing: border-box;
+}
+
+
+.smart-living-eyebrow {
+  margin: 0 0 18px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 11px;
+  font-weight: 500;
+
+  letter-spacing: 4px;
+
+  color: #806f5c;
+}
+
+
+.smart-living-content h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(42px, 4vw, 66px);
+
+  font-weight: 400;
+
+  line-height: 1.02;
+
+  color: #2b2119;
+}
+
+
+.smart-living-content h2 span {
+  color: #2b2119;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.smart-living-description {
+  max-width: 470px;
+
+  margin: 28px 0 34px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  line-height: 1.8;
+
+  color: #5f554b;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.smart-living-button {
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+
+  padding: 15px 20px 15px 24px;
+
+  border-radius: 40px;
+
+  background: #2b2119;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 10px;
+  font-weight: 500;
+
+  letter-spacing: 1.2px;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    gap 0.3s ease;
+}
+
+
+.smart-living-button span {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #2b2119;
+
+  font-size: 17px;
+
+  line-height: 1;
+
+  transition: transform 0.3s ease;
+}
+
+
+.smart-living-button:hover {
+  background: #49382a;
+
+  transform: translateY(-2px);
+
+  gap: 28px;
+}
+
+
+.smart-living-button:hover span {
+  transform: translateX(3px);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.smart-living-image {
+  position: relative;
+
+  width: 100%;
+  min-height: 570px;
+
+  overflow: hidden;
+}
+
+
+.smart-living-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+
+.smart-living-image:hover img {
+  transform: scale(1.025);
+}
+
+
+/* =========================================
+   IMAGE OVERLAY
+========================================= */
+
+.smart-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(35, 27, 20, 0.08),
+      transparent 30%
+    );
+}
+
+
+/* =========================================
+   LARGE DESKTOP
+========================================= */
+
+@media (min-width: 1500px) {
+
+  .smart-living-section {
+    min-height: 650px;
+  }
+
+  .smart-living-image {
+    min-height: 650px;
+  }
+
+  .smart-living-content {
+    padding-left: 6vw;
+  }
+
+  .smart-living-description {
+    font-size: 15px;
+    max-width: 500px;
+  }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .smart-living-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .smart-living-content {
+    padding: 60px 35px;
+  }
+
+  .smart-living-content h2 {
+    font-size: 45px;
+  }
+
+  .smart-living-description {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .smart-living-image {
+    min-height: 500px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .smart-living-section {
+    display: flex;
+    flex-direction: column-reverse;
+
+    min-height: auto;
+  }
+
+
+  /* IMAGE FIRST */
+  .smart-living-image {
+    width: 100%;
+
+    height: 430px;
+    min-height: 430px;
+  }
+
+
+  .smart-living-image img {
+    object-position: center;
+  }
+
+
+  /* CONTENT SECOND */
+  .smart-living-content {
+    padding: 55px 22px 60px;
+
+    align-items: flex-start;
+  }
+
+
+  .smart-living-eyebrow {
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 13px;
+  }
+
+
+  .smart-living-content h2 {
+    font-size: 38px;
+
+    line-height: 1.03;
+  }
+
+
+  .smart-living-description {
+    max-width: 100%;
+
+    margin: 22px 0 28px;
+
+    font-size: 12px;
+
+    line-height: 1.75;
+  }
+
+
+  .smart-living-button {
+    padding: 13px 17px 13px 19px;
+
+    gap: 18px;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+  }
+
+
+  .smart-living-button span {
+    width: 27px;
+    height: 27px;
+
+    font-size: 15px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+  .smart-living-image {
+    height: 370px;
+    min-height: 370px;
+  }
+
+
+  .smart-living-content {
+    padding: 45px 18px 50px;
+  }
+
+
+  .smart-living-content h2 {
+    font-size: 33px;
+  }
+
+
+  .smart-living-description {
+    font-size: 11px;
+  }
+
+}

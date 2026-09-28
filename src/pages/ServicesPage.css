@@ -1,0 +1,758 @@
+/* =========================================
+   SERVICES PAGE
+========================================= */
+
+.services-page {
+  width: 100%;
+  overflow: hidden;
+  background: #f1ece3;
+  color: #211810;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.services-hero {
+  position: relative;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+
+  background-image: url("/images/services-hero.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.services-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20, 10, 5, 0.94) 0%,
+      rgba(20, 10, 5, 0.78) 34%,
+      rgba(20, 10, 5, 0.30) 65%,
+      rgba(20, 10, 5, 0.08) 100%
+    );
+}
+
+.services-hero-content {
+  position: relative;
+  z-index: 2;
+
+  width: 470px;
+  margin-left: 7.5%;
+  padding-top: 70px;
+
+  color: white;
+}
+
+.services-hero-content > span,
+.services-heading span,
+.process-title span,
+.services-cta span {
+  display: block;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+
+  color: #c49458;
+}
+
+.services-hero-content h1 {
+  margin: 20px 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(60px, 6vw, 88px);
+  font-weight: 400;
+  line-height: 0.94;
+  letter-spacing: -3px;
+}
+
+.services-hero-content h1 em,
+.services-heading h2 em,
+.process-title h2 em,
+.services-cta h2 em {
+  color: #c4955c;
+  font-style: normal;
+}
+
+.services-hero-content p {
+  width: 420px;
+  margin-top: 25px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.84);
+}
+
+
+/* =========================================
+   SERVICES SECTION
+========================================= */
+
+.services-list {
+  padding: 65px 3.5% 70px;
+  background: #f1ece3;
+}
+
+.services-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 50px;
+  margin-bottom: 35px;
+}
+
+.services-heading h2 {
+  margin: 14px 0 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(42px, 4vw, 60px);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.services-heading > p {
+  max-width: 470px;
+  margin: 0 20px 5px 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  line-height: 1.65;
+
+  color: #62574e;
+}
+
+
+/* =========================================
+   SERVICE GRID
+========================================= */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+
+  border-top: 1px solid rgba(55, 35, 20, 0.15);
+}
+
+
+/* =========================================
+   SERVICE CARD
+========================================= */
+
+.service-card {
+  min-width: 0;
+
+  padding: 0 12px 25px;
+
+  border-right: 1px solid rgba(55, 35, 20, 0.15);
+  border-bottom: 1px solid rgba(55, 35, 20, 0.15);
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease;
+}
+
+/* Remove right border from every 4th card */
+
+.service-card:nth-child(4n) {
+  border-right: none;
+}
+
+
+/* Image */
+
+.service-card img {
+  width: 100%;
+  height: 190px;
+
+  display: block;
+  object-fit: cover;
+
+  margin-bottom: 18px;
+
+  transition: transform 0.45s ease;
+}
+
+
+/* Small hover effect */
+
+.service-card:hover img {
+  transform: scale(1.025);
+}
+
+
+/* Service information */
+
+.service-info {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 12px;
+}
+
+
+/* Number */
+
+.service-number {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27px;
+
+  color: #a8753f;
+}
+
+
+/* Heading */
+
+.service-info h3 {
+  margin: 4px 0 8px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+
+/* Description */
+
+.service-info p {
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  line-height: 1.6;
+
+  color: #62574e;
+}
+
+
+/* =========================================
+   PROCESS
+========================================= */
+
+.services-process {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+
+  gap: 50px;
+  padding: 60px 6%;
+
+  background: #e9e1d4;
+}
+
+.process-title h2 {
+  margin: 14px 0 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -2px;
+}
+
+.process-steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.process-step {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 15px;
+  min-width: 130px;
+}
+
+.process-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #b58a58;
+  border-radius: 50%;
+
+  color: #9b6936;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+}
+
+.process-step h3 {
+  margin: 2px 0 8px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+.process-step p {
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  line-height: 1.5;
+
+  color: #685b50;
+}
+
+.process-line {
+  height: 1px;
+
+  flex: 1;
+
+  margin: 0 15px;
+
+  background: #bd986e;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.services-cta {
+  position: relative;
+
+  min-height: 260px;
+
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(22, 11, 5, 0.94),
+      rgba(22, 11, 5, 0.78)
+    ),
+    url("/images/service-repair.png");
+
+  background-size: cover;
+  background-position: center;
+}
+
+.services-cta-content {
+  width: 88%;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+
+  gap: 40px;
+
+  color: white;
+}
+
+.services-cta h2 {
+  margin: 12px 0 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(45px, 4vw, 62px);
+  font-weight: 400;
+  line-height: 0.95;
+  letter-spacing: -2px;
+}
+
+
+/* =========================================
+   CTA BUTTON
+========================================= */
+
+.services-cta-content > a {
+  width: 280px;
+  height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-sizing: border-box;
+
+  padding: 0 14px 0 30px;
+
+  border: 1px solid rgba(197, 151, 92, 0.8);
+  border-radius: 999px;
+
+  color: white;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+
+  white-space: nowrap;
+  text-decoration: none;
+
+  overflow: hidden;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.services-cta-content > a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #c49a5a;
+  transform: translateY(-2px);
+}
+
+
+/* CTA text */
+
+.services-cta-content > a .cta-button-text {
+  display: block;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 3px;
+
+  color: #d2a65f;
+}
+
+
+/* CTA arrow circle */
+
+.services-cta-content > a .cta-arrow {
+  width: 58px;
+  height: 58px;
+
+  flex: 0 0 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+  color: #241810;
+
+  font-family: Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1;
+
+  letter-spacing: 0;
+
+  transition:
+    transform 0.35s ease,
+    background 0.35s ease;
+}
+
+.services-cta-content > a:hover .cta-arrow {
+  transform: translateX(3px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  /* HERO */
+
+  .services-hero-content {
+    margin-left: 6%;
+  }
+
+
+  /* SERVICES GRID */
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card:nth-child(4n) {
+    border-right: 1px solid rgba(55, 35, 20, 0.15);
+  }
+
+  .service-card:nth-child(2n) {
+    border-right: none;
+  }
+
+
+  /* PROCESS */
+
+  .services-process {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+
+  /* CTA */
+
+  .services-cta-content {
+    width: 90%;
+  }
+
+  .services-cta-content > a {
+    width: 260px;
+    height: 72px;
+
+    padding-left: 25px;
+    padding-right: 11px;
+  }
+
+  .services-cta-content > a .cta-arrow {
+    width: 54px;
+    height: 54px;
+    flex-basis: 54px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  /* =======================================
+     HERO
+  ======================================= */
+
+  .services-hero {
+    min-height: 620px;
+    background-position: 62% center;
+  }
+
+  .services-hero-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(15, 8, 4, 0.35),
+        rgba(15, 8, 4, 0.70) 48%,
+        rgba(15, 8, 4, 0.96) 100%
+      );
+  }
+
+  .services-hero-content {
+    width: 88%;
+    margin: auto;
+    padding-top: 110px;
+  }
+
+  .services-hero-content > span,
+  .services-heading span,
+  .process-title span,
+  .services-cta span {
+    font-size: 8px;
+    letter-spacing: 3px;
+  }
+
+  .services-hero-content h1 {
+    font-size: 55px;
+    letter-spacing: -2px;
+  }
+
+  .services-hero-content p {
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+
+  /* =======================================
+     SERVICES
+  ======================================= */
+
+  .services-list {
+    padding: 45px 16px 50px;
+  }
+
+  .services-heading {
+    display: block;
+    margin-bottom: 28px;
+  }
+
+  .services-heading h2 {
+    font-size: 39px;
+    line-height: 1;
+    margin-bottom: 18px;
+  }
+
+  .services-heading > p {
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.65;
+  }
+
+
+  /* =======================================
+     ONE COLUMN
+  ======================================= */
+
+  .services-grid {
+    grid-template-columns: 1fr;
+
+    border-top: 1px solid rgba(55, 35, 20, 0.15);
+  }
+
+  .service-card,
+  .service-card:nth-child(2n),
+  .service-card:nth-child(4n) {
+    border-right: none;
+
+    padding: 18px 0 25px;
+  }
+
+  .service-card img {
+    height: 210px;
+    margin-bottom: 15px;
+  }
+
+  .service-info {
+    grid-template-columns: 42px 1fr;
+    gap: 10px;
+  }
+
+  .service-number {
+    font-size: 24px;
+  }
+
+  .service-info h3 {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+    line-height: 1.45;
+  }
+
+  .service-info p {
+    font-size: 10px;
+    line-height: 1.55;
+  }
+
+
+  /* =======================================
+     PROCESS
+  ======================================= */
+
+  .services-process {
+    display: block;
+    padding: 45px 20px;
+  }
+
+  .process-title h2 {
+    font-size: 40px;
+    margin-bottom: 35px;
+  }
+
+  .process-steps {
+    display: block;
+  }
+
+  .process-step {
+    min-width: 0;
+    margin-bottom: 22px;
+  }
+
+  .process-line {
+    display: none;
+  }
+
+  .process-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+
+  /* =======================================
+     CTA
+  ======================================= */
+
+  .services-cta {
+    min-height: 300px;
+    background-position: center;
+  }
+
+  .services-cta-content {
+    width: 88%;
+    display: block;
+  }
+
+  .services-cta h2 {
+    font-size: 43px;
+    margin-bottom: 30px;
+  }
+
+  .services-cta-content > a {
+    width: 250px;
+    height: 68px;
+
+    padding: 0 9px 0 24px;
+
+    font-size: 9px;
+  }
+
+  .services-cta-content > a .cta-button-text {
+    font-size: 9px;
+    letter-spacing: 3px;
+  }
+
+  .services-cta-content > a .cta-arrow {
+    width: 52px;
+    height: 52px;
+
+    flex: 0 0 52px;
+
+    font-size: 19px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+  .services-hero-content h1 {
+    font-size: 48px;
+  }
+
+  .services-cta h2 {
+    font-size: 39px;
+  }
+
+  .services-cta-content > a {
+    width: 235px;
+    height: 64px;
+
+    padding-left: 20px;
+    padding-right: 8px;
+  }
+
+  .services-cta-content > a .cta-button-text {
+    font-size: 8px;
+    letter-spacing: 2.5px;
+  }
+
+  .services-cta-content > a .cta-arrow {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,878 @@
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+.contact-page {
+  width: 100%;
+  overflow: hidden;
+  background: #f1ece3;
+  color: #211810;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.contact-hero {
+  position: relative;
+
+  min-height: 600px;
+
+  background-image:
+    url("/images/gallery/9.jpeg");
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+}
+
+
+.contact-hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(18, 12, 8, 0.95) 0%,
+      rgba(18, 12, 8, 0.80) 35%,
+      rgba(18, 12, 8, 0.40) 65%,
+      rgba(18, 12, 8, 0.12) 100%
+    );
+}
+
+
+.contact-hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1200px, 90%);
+
+  margin: 0 auto;
+
+  padding-top: 60px;
+}
+
+
+.contact-hero-content > span {
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 12px;
+
+  letter-spacing: 4px;
+
+  color: #c49a5a;
+}
+
+
+.contact-hero-content h1 {
+  max-width: 700px;
+
+  margin: 0;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(55px, 6vw, 88px);
+
+  font-weight: 400;
+
+  line-height: 0.98;
+
+  color: #fff;
+}
+
+
+.contact-hero-content h1 em {
+  color: #c49a5a;
+
+  font-weight: 400;
+}
+
+
+.contact-hero-content p {
+  max-width: 470px;
+
+  margin-top: 32px;
+
+  padding-left: 20px;
+
+  border-left: 2px solid #c49a5a;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: rgba(255, 255, 255, 0.88);
+}
+
+
+
+/* =========================================
+   MAIN CONTACT SECTION
+========================================= */
+
+.contact-main {
+  width: min(1400px, 92%);
+
+  margin: 0 auto;
+
+  padding: 90px 0 100px;
+}
+
+
+.contact-intro {
+  max-width: 700px;
+
+  margin-bottom: 65px;
+}
+
+
+.contact-intro > span {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  color: #a77c43;
+}
+
+
+.contact-intro h2 {
+  margin: 12px 0 20px;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(42px, 5vw, 64px);
+
+  font-weight: 400;
+
+  line-height: 1.04;
+
+  color: #251a13;
+}
+
+
+.contact-intro h2 em {
+  color: #a77c43;
+
+  font-weight: 400;
+}
+
+
+.contact-intro p {
+  max-width: 600px;
+
+  margin: 0;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+
+  color: #6c6259;
+}
+
+
+
+/* =========================================
+   CONTACT LAYOUT
+========================================= */
+
+.contact-layout {
+  display: grid;
+
+  grid-template-columns:
+    0.8fr 1.2fr;
+
+  gap: 80px;
+
+  align-items: start;
+}
+
+
+
+/* =========================================
+   CONTACT INFORMATION
+========================================= */
+
+.contact-info {
+  border-top: 1px solid #cfc4b5;
+}
+
+
+.contact-info-item {
+  padding: 25px 0;
+
+  border-bottom: 1px solid #cfc4b5;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+}
+
+
+.contact-info-label {
+  margin-bottom: 10px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 2.5px;
+
+  color: #a77c43;
+}
+
+
+.contact-info-item a {
+  display: block;
+
+  margin: 3px 0;
+
+  color: #2a1e16;
+
+  text-decoration: none;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 15px;
+
+  transition:
+    color 0.3s ease;
+}
+
+
+.contact-info-item a:hover {
+  color: #a77c43;
+}
+
+
+.contact-info-item strong {
+  font-family: Georgia, serif;
+
+  font-size: 27px;
+
+  font-weight: 400;
+
+  color: #2a1e16;
+}
+
+
+.contact-info-item p {
+  max-width: 350px;
+
+  margin: 8px 0 0;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+
+  color: #74695f;
+}
+
+
+.contact-arrow {
+  margin-left: 8px;
+
+  color: #a77c43;
+
+  font-size: 17px;
+}
+
+
+
+/* =========================================
+   WHATSAPP DIRECT CONTACT
+========================================= */
+
+.contact-direct {
+  margin-top: 35px;
+
+  padding: 28px;
+
+  background: #2a1e16;
+
+  color: #fff;
+}
+
+
+.contact-direct > span {
+  display: block;
+
+  margin-bottom: 15px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+
+  color: rgba(255, 255, 255, 0.7);
+}
+
+
+.contact-direct a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  color: #c49a5a;
+
+  text-decoration: none;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  transition:
+    color 0.3s ease;
+}
+
+
+.contact-direct a:hover {
+  color: #fff;
+}
+
+
+.contact-direct a b {
+  font-size: 18px;
+
+  font-weight: 400;
+}
+
+
+
+/* =========================================
+   FORM WRAPPER
+========================================= */
+
+.contact-form-wrapper {
+  padding: 45px;
+
+  background: #e8dfd2;
+
+  border: 1px solid #d8cdbf;
+}
+
+
+.form-heading {
+  margin-bottom: 35px;
+}
+
+
+.form-heading > span {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 3px;
+
+  color: #a77c43;
+}
+
+
+.form-heading h3 {
+  margin: 10px 0 0;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(34px, 4vw, 48px);
+
+  font-weight: 400;
+
+  line-height: 1.05;
+
+  color: #281c14;
+}
+
+
+.form-heading h3 em {
+  color: #a77c43;
+
+  font-weight: 400;
+}
+
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.contact-form {
+  width: 100%;
+}
+
+
+.form-row {
+  display: grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap: 20px;
+}
+
+
+.form-group {
+  display: flex;
+
+  flex-direction: column;
+
+  margin-bottom: 22px;
+}
+
+
+.form-group label {
+  margin-bottom: 9px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+
+  color: #665a50;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  border: none;
+
+  border-bottom: 1px solid #b9ad9f;
+
+  background: transparent;
+
+  padding: 12px 0;
+
+  outline: none;
+
+  border-radius: 0;
+
+  color: #281c14;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 13px;
+
+  transition:
+    border-color 0.3s ease;
+}
+
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-bottom-color: #a77c43;
+}
+
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #94897e;
+}
+
+
+.form-group select {
+  cursor: pointer;
+}
+
+
+.form-group textarea {
+  resize: vertical;
+
+  min-height: 110px;
+
+  line-height: 1.7;
+}
+
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.contact-submit {
+  width: 100%;
+
+  margin-top: 8px;
+
+  padding: 17px 25px;
+
+  border: none;
+
+  background: #2a1e16;
+
+  color: #fff;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  transition:
+    background 0.3s ease;
+}
+
+
+.contact-submit:hover {
+  background: #a77c43;
+}
+
+
+.contact-submit span {
+  font-size: 20px;
+
+  font-weight: 300;
+}
+
+
+.form-note {
+  margin: 15px 0 0;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 10px;
+
+  line-height: 1.6;
+
+  color: #81766c;
+}
+
+
+
+/* =========================================
+   STATS
+========================================= */
+
+.contact-stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  border-top: 1px solid #cfc4b5;
+
+  border-bottom: 1px solid #cfc4b5;
+
+  width: 100%;
+}
+
+
+.contact-stat {
+  padding: 45px 20px;
+
+  text-align: center;
+
+  border-right: 1px solid #cfc4b5;
+}
+
+
+.contact-stat:last-child {
+  border-right: none;
+}
+
+
+.contact-stat strong {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-family: Georgia, serif;
+
+  font-size: 42px;
+
+  font-weight: 400;
+
+  color: #a77c43;
+}
+
+
+.contact-stat span {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+
+  color: #665a50;
+}
+
+
+
+/* =========================================
+   FINAL CTA
+========================================= */
+
+.contact-cta {
+  position: relative;
+
+  min-height: 430px;
+
+  background-image:
+    url("/images/gallery/20.jpeg");
+
+  background-size: cover;
+
+  background-position: center;
+
+  display: flex;
+
+  align-items: center;
+}
+
+
+.contact-cta::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(25, 16, 10, 0.94),
+      rgba(25, 16, 10, 0.70),
+      rgba(25, 16, 10, 0.35)
+    );
+}
+
+
+.contact-cta-content {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1200px, 90%);
+
+  margin: 0 auto;
+}
+
+
+.contact-cta-content > span {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 11px;
+
+  letter-spacing: 3px;
+
+  color: #c49a5a;
+}
+
+
+.contact-cta-content h2 {
+  margin: 12px 0 30px;
+
+  font-family: Georgia, serif;
+
+  font-size: clamp(45px, 5vw, 70px);
+
+  font-weight: 400;
+
+  line-height: 1.02;
+
+  color: #fff;
+}
+
+
+.contact-cta-content h2 em {
+  color: #c49a5a;
+
+  font-weight: 400;
+}
+
+
+.contact-cta-content a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 14px 28px;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.7);
+
+  border-radius: 40px;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+
+.contact-cta-content a:hover {
+  background: #fff;
+
+  color: #241810;
+}
+
+
+.contact-cta-content a b {
+  font-size: 18px;
+
+  font-weight: 400;
+}
+
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+
+  .contact-info {
+    order: 2;
+  }
+
+
+  .contact-form-wrapper {
+    order: 1;
+  }
+
+}
+
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .contact-hero {
+    min-height: 600px;
+  }
+
+
+  .contact-hero-content {
+    padding-top: 70px;
+  }
+
+
+  .contact-hero-content h1 {
+    font-size: 48px;
+  }
+
+
+  .contact-hero-content p {
+    font-size: 12px;
+  }
+
+
+  .contact-main {
+    width: 92%;
+
+    padding: 60px 0 70px;
+  }
+
+
+  .contact-intro {
+    margin-bottom: 45px;
+  }
+
+
+  .contact-intro h2 {
+    font-size: 42px;
+  }
+
+
+  .contact-form-wrapper {
+    padding: 28px 22px;
+  }
+
+
+  .form-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+
+  .form-heading h3 {
+    font-size: 35px;
+  }
+
+
+  .contact-stats {
+    grid-template-columns: 1fr;
+  }
+
+
+  .contact-stat {
+    border-right: none;
+
+    border-bottom: 1px solid #cfc4b5;
+  }
+
+
+  .contact-stat:last-child {
+    border-bottom: none;
+  }
+
+
+  .contact-cta {
+    min-height: 470px;
+  }
+
+
+  .contact-cta-content h2 {
+    font-size: 45px;
+  }
+
+}

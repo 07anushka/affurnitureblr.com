@@ -1,0 +1,338 @@
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.about-section {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 500px;
+
+  background: #eee9e1;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.about-image-wrapper {
+  position: relative;
+
+  width: 100%;
+  min-height: 500px;
+
+  overflow: hidden;
+}
+
+
+.about-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+
+.about-image-wrapper:hover .about-image {
+  transform: scale(1.025);
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.about-content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 75px 7vw 75px 6vw;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.about-eyebrow {
+  margin: 0 0 18px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  letter-spacing: 3.5px;
+
+  color: #806f5c;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.about-content h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(43px, 4vw, 64px);
+
+  font-weight: 400;
+
+  line-height: 1.03;
+
+  color: #2b2119;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.about-description {
+  max-width: 510px;
+
+  margin: 27px 0 32px;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 400;
+
+  line-height: 1.8;
+
+  color: #5d554d;
+}
+
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.about-button {
+  width: fit-content;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 14px 18px 14px 23px;
+
+  border-radius: 40px;
+
+  background: #2b2119;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 500;
+
+  letter-spacing: 1.3px;
+
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease,
+    gap 0.3s ease;
+}
+
+
+.about-button span {
+  width: 29px;
+  height: 29px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  color: #2b2119;
+
+  font-size: 16px;
+
+  line-height: 1;
+
+  transition: transform 0.3s ease;
+}
+
+
+.about-button:hover {
+  background: #49382a;
+
+  transform: translateY(-2px);
+
+  gap: 24px;
+}
+
+
+.about-button:hover span {
+  transform: translateX(3px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .about-section {
+    min-height: 450px;
+  }
+
+  .about-image-wrapper {
+    min-height: 450px;
+  }
+
+  .about-content {
+    padding: 55px 35px;
+  }
+
+  .about-content h2 {
+    font-size: 45px;
+  }
+
+  .about-description {
+    font-size: 12px;
+
+    line-height: 1.7;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .about-section {
+    display: flex;
+
+    flex-direction: column;
+
+    min-height: auto;
+  }
+
+
+  /* IMAGE */
+
+  .about-image-wrapper {
+    width: 100%;
+
+    height: 360px;
+
+    min-height: 360px;
+  }
+
+
+  .about-image {
+    object-position: center;
+  }
+
+
+  /* CONTENT */
+
+  .about-content {
+    padding: 52px 22px 58px;
+  }
+
+
+  .about-eyebrow {
+    font-size: 8px;
+
+    letter-spacing: 2.8px;
+
+    margin-bottom: 13px;
+  }
+
+
+  .about-content h2 {
+    font-size: 38px;
+
+    line-height: 1.04;
+  }
+
+
+  .about-description {
+    max-width: 100%;
+
+    margin: 20px 0 27px;
+
+    font-size: 11.5px;
+
+    line-height: 1.75;
+  }
+
+
+  .about-button {
+    padding: 12px 16px 12px 19px;
+
+    gap: 17px;
+
+    font-size: 8px;
+  }
+
+
+  .about-button span {
+    width: 27px;
+
+    height: 27px;
+
+    font-size: 15px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 380px) {
+
+  .about-image-wrapper {
+    height: 320px;
+
+    min-height: 320px;
+  }
+
+
+  .about-content {
+    padding: 45px 18px 50px;
+  }
+
+
+  .about-content h2 {
+    font-size: 33px;
+  }
+
+}

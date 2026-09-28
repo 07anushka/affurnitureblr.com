@@ -1,0 +1,11 @@
+.home {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+  background: #211d1a;
+}
